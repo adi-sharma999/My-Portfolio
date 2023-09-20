@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Raleway:wght@500&display=swap');
+*{
+    font-family: 'Comfortaa', cursive;
+    margin: 0; padding: 0;
+}
+:root{
+    --black : #000000;
+    --brown : #3D0000;
+    --maroon: #950101;
+    --red :   #FF0000;
+    --light-color: #666;
+}
+span{
+    color: var(--red);
+}
+span:hover{
+    letter-spacing: 0.2rem;
+    transition: 0.3s;
+}
+body{
+    background-color: var(--black);
+}
+
+
+
+
+
+
+
+
+header{
+    background-color: var(--black);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    align-items: center;
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+header .logo{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 7rem;
+    text-decoration: none;
+    padding-top: 0.5rem;
+}
+header .logo span{
+    color: var(--red);
+}
+.Home .Home-items .head span:hover,
+header .logo:hover{
+    letter-spacing: 0.2rem;
+    transition: 0.3s;
+}
+header .side-items{
+    display: flex;
+    margin-right: 7rem;
+    padding-top: 0.5rem;
+}
+header .side-items .side{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+.Home{
+    padding-top: 0.75rem;
+}
+.Home .Home-items{
+    padding-top: 12%;
+    display: flex;
+    margin: 0 10rem;
+    padding-bottom:12rem;
+    padding-left: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.Home .Home-items .head{
+    margin-left: 5rem;
+    margin-right: 4rem;
+}
+.Home .Home-items .head h1{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+.Home .Home-items .head h3{
+    color: gray;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+.Home .Home-items .head span{
+    color: var(--red);
+}
+
+
+
+
+
+
+
+
+
+
+.certificate{
+    height: 100%;
+    width: 100%;
+}
+.certificate .hes{
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+}
+
+.certificate .certi-slider .wrapper .slide{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.certificate .certi-slider .wrapper .slide img{
+    z-index: 100;
+    width:60%;
+    margin: auto 15rem;
+}
+.certificate .certi-slider .wrapper .slide .content{
+    position: relative;
+    right: 9.5rem;
+    align-items: center;
+    margin: 10rem;
+    width: 100%;
+}
+
+.certificate .certi-slider .wrapper .slide .content h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.certificate .certi-slider .wrapper .slide .content h3{
+    color:gray;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.swiper-button-next{
+    color: white;
+    padding-right: 2.5rem;
+}
+.swiper-button-prev{
+    color: white;
+    padding-left: 2.55rem;
+}
+
+
+
+
+
+
+
+
+
+
