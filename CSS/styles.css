@@ -5,8 +5,6 @@
 }
 :root{
     --black : #000000;
-    --brown : #3D0000;
-    --maroon: #950101;
     --red :   #FF0000;
     --light-color: #666;
 }
@@ -22,7 +20,28 @@ body{
 }
 
 
+.vl{
+    border-left: 1px solid var(--red);
+    margin: auto 0rem auto 5rem;
+    height: 100px;
+}
 
+.v{
+    position: relative;
+    right: 7.5rem;
+    border-left: 1px solid var(--red);
+    margin: auto 0rem auto 5rem;
+    height: 250px;
+}
+
+hr{
+    width: 5%;
+    margin: 0rem auto 2.75rem auto;
+    border-top: 1rem dotted var(--light-color);
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
 
 
 
@@ -96,6 +115,7 @@ header .side-items .side{
     color: white;
     font-size: 4.5rem;
     font-weight: bold;
+    padding-bottom: .7rem;
 }
 .Home .Home-items .head h3{
     color: gray;
@@ -116,44 +136,46 @@ header .side-items .side{
 
 
 .certificate{
+    width: 100%;
     height: 100%;
-    width: 100%;
 }
-.certificate .hes{
+.hes{
+    position: relative;
+    top: 2.75rem;
     color: white;
-    font-weight: bold;
-    width: 100%;
+    font-weight: lighter;
     font-size: 2.5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 1rem auto 1rem auto;
 }
 
 .certificate .certi-slider .wrapper .slide{
     display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    height: 100%;
+    
 }
-.certificate .certi-slider .wrapper .slide img{
-    z-index: 100;
-    width:60%;
-    margin: auto 15rem;
+.certificate .certi-slider .wrapper .slide .pic{
+    flex:1 1 21rem;
+    margin-left: 21%;
+}
+.certificate .certi-slider .wrapper .slide .pic img{
+    width: 100%;
+    border-radius: .5rem;
 }
 .certificate .certi-slider .wrapper .slide .content{
-    position: relative;
-    right: 9.5rem;
     align-items: center;
-    margin: 10rem;
-    width: 100%;
+    flex: 1 1 2rem;
+    margin-right: 21%;
 }
-
 .certificate .certi-slider .wrapper .slide .content h1{
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
+    padding-bottom: .7rem;
 }
 
 .certificate .certi-slider .wrapper .slide .content h3{
@@ -162,29 +184,231 @@ header .side-items .side{
     font-weight: lighter;
 }
 
-.swiper-slide {
-    font-size: 18px;
-    background: var(--black);
+.swiper-button-next{
+    color: var(--red);
+    padding-right: 6rem;
+}
+.swiper-button-prev{
+    color: var(--red);
+    padding-left: 6rem;
+}
+.cisco{
+    display: flex;
+    margin-left: 25%;
+}
+
+
+
+.project{
+    width: 100%;
+}
+.project .pro{
+    height: 100%;
+    margin: 5rem 7rem 5rem 7rem;
+}
+.project .pict{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.swiper-button-next{
+.project .pict img{
+    width: 65%;
+}
+
+.project .pro .content{
+    display: flex;
+}
+
+.project .pro .content p{
+    color: var(--light-color);
+    font-size: 2rem;
+    margin: 5rem -7rem 5rem 5rem;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .pro .content .cont{
+    display: flex;
+    gap: 0rem;
+    margin: 5rem 0rem 5rem 5rem;
+}
+.project .pro .content .btn{
+    cursor: pointer;
+    height: 3rem;
+    width: 20rem;
+    margin-top: 12rem;
+    font-size: 1rem;
+    margin-right: 2.5rem;
+    border-radius: 3rem;
+    color: var(--red);
+    border-color: var(--red);
+    background-color: var(--black);
+}
+.project .pro .content button:hover{
     color: white;
-    padding-right: 2.5rem;
+    border-color: white;
 }
-.swiper-button-prev{
+
+.project .pro .content h1{
     color: white;
-    padding-left: 2.55rem;
+    font-size: 2.5rem;
+    margin: auto;
+    margin-left: 2.5rem;
+    font-weight: bold;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
 
+.About{
+    width: 100%;
+    height: 100%;
+}
+.About .data{
+    margin: 10rem 10rem 5rem 10rem;
+}
+.About .skills{
+    display: flex;
+}
+
+.About .skills .skill-items .java{
+    display: flex;
+}
+
+.About .skills .fas{
+    color: var(--red);
+    font-size: 1.25rem;
+    margin: auto .5rem;
+    height: 100%;
+}
+
+.About .skills .imgg{
+    display: flex;
+    align-items: center;
+}
+
+.About .skills .imgg img{
+    width: 75%;
+}
+
+.About .data h3{
+    font-weight: lighter;
+    font-size: 2rem;
+    color: white;
+    margin: 1rem 2.5rem;
+}
 
 
 
 
 
+.honors{
+    width: 100%;
+}
+.honors .platform{
+    display: flex;
+    margin: 5rem 7rem;
+}
+.honors .platform .leetcode{
+    display: flex;
+}
+
+.honors .platform .leetcode .photo{
+    margin: auto;
+    width: 50%;
+}
+
+.honors .platform .leetcode .photo img{
+    width: 100%;
+    margin: 2.25rem auto;
+}
+
+.honors .platform .leetcode .disc .leet{
+    margin: 7rem 3rem;
+}
+
+.honors .platform .leetcode .disc .hacker{
+    margin: 7rem 3rem;
+}
+
+.honors .platform .leetcode .disc .code{
+    margin: 7rem 3rem;
+}
+.honors .platform .leetcode .disc h3{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.honors .platform .leetcode .disc p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 1.5rem auto 1.5rem auto;
+}
+
+.honors .platform .leetcode{
+    justify-content: center;
+    align-items: center;
+}
+.honors .platform .leetcode .btnss{
+    cursor: pointer;
+    color: var(--red);
+    border-radius: 2.5rem;
+    border-color: var(--red);
+    background-color: var(--black);
+    margin: auto;
+    font-size: 1rem;
+    width: 6rem;
+    height: 2rem;
+    margin: 0 1rem;
+}
+
+
+.honors .platform .leetcode .btnss: hover{
+    color: white;
+    border-color: white;
+}
+
+
+
+
+.footer{
+    width: 100%;
+}
+.footer .footer-items {
+    margin-top: 6rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    font-weight: lighter;
+}
+
+.footer a:hover{
+    color: var(--red);
+}
+
+.footer .footer-items .item1, .item2{
+    margin: 2.75rem;
+}
+
+.credit{
+    color: white;
+    margin-top: 6rem;
+    margin-bottom: .5rem;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
