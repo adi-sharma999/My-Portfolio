@@ -186,11 +186,11 @@ header .side-items .side{
 
 .swiper-button-next{
     color: var(--red);
-    padding-right: 6rem;
+    padding-right: 7rem;
 }
 .swiper-button-prev{
     color: var(--red);
-    padding-left: 6rem;
+    padding-left: 7rem;
 }
 .cisco{
     display: flex;
