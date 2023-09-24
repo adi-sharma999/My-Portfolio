@@ -1,3 +1,9 @@
+var loader = document.getElementById("preloader");
+window.addEventListener("load",function(){
+    loader.style.display = "none";
+})
+
+
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .navbar a');
 
@@ -16,12 +22,6 @@ window.onscroll = () =>{
     };
   });
 }
-
-var loader = document.getElementById("preloader");
-window.addEventListener("load",function(){
-    loader.style.display = "none";
-})
-
 
 var swiper = new Swiper(".certi-slider",{
     spaceBetween: 1,
