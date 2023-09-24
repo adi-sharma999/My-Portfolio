@@ -4,21 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="icon" href="img/favicon_io/favicon.ico">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="img/favicon_io/favicon.ico">
     <title>Aditya Sharma | Portfolio</title>
 </head>
 
-<body class="bk">
+<body>
     
+    <div id="preloader"></div>
+
     <!--    Header Section  -->
     <header>
-        <a href="#" class="logo">Aditya Sharma <span>.</span></a>
-        <div class="side-items">
-            <a href="#" class="side">Home</a>
-            <a href="#" class="side">Work</a>
-            <a href="#" class="side">About</a>  
-        </div>
+        <a href="#Contact" class="logo">Aditya Sharma <span>.</span></a>
+        <nav class="navbar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#Work">Work</a>
+            <a href="#About">About</a>  
+        </nav>
     </header>
     <!--    Header Section  -->
 
@@ -39,7 +41,7 @@
     <hr>
     
     <!--    Certificate Section  -->
-    <section class="certificate">
+    <section class="certificate" id="Work">
         <h1 class="hes">Certifications<span> .</span></h1>
         <div class="swiper certi-slider">
             <div class="swiper-wrapper wrapper">
@@ -148,8 +150,8 @@
 
     <!--    Project     -->
 
-    <section class="project">
-        <h1 class="hes">Work<span> .</span></h1>
+    <section class="project" id="Work">
+        <h1 class="hes">Project<span> .</span></h1>
         <div class="pro">
             <div class="content">
                 <h1>Taste of India</h1>
@@ -230,7 +232,7 @@
     <!-- About -->
     <!--    Honors  -->
 
-        <Section class="honors">
+        <Section class="honors" id="About">
             <h1 class="hes">About<span> .</span></h1>
             <div class="platform">
                 <div class="leetcode">
@@ -266,7 +268,7 @@
 
 
         
-    <section class="footer">
+    <section class="footer" id="Contact">
         <div class="footer-items">
             <div class="item1">
                 <a href="tel: 9758466589">Phone</a>
