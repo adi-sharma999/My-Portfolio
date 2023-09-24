@@ -368,12 +368,11 @@ header .side-items .side{
     height: 2rem;
     margin: 0 1rem;
 }
-
-
-.honors .platform .leetcode .btnss: hover{
+.honors .platform .leetcode .btnss:hover{
     color: white;
     border-color: white;
 }
+
 
 
 
