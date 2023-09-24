@@ -199,11 +199,11 @@ header .navbar a :hover{
 
 .swiper-button-next{
     color: var(--red);
-    padding-right: 7rem;
+    padding-right: 7.5rem;
 }
 .swiper-button-prev{
     color: var(--red);
-    padding-left: 7rem;
+    padding-left: 7.5rem;
 }
 .cisco{
     display: flex;
