@@ -20,6 +20,14 @@ body{
 }
 
 
+#preloader{
+    background: var(--black) url(../img/loader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 .vl{
     border-left: 1px solid var(--red);
     margin: auto 0rem auto 5rem;
@@ -52,7 +60,7 @@ header{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 99;
     align-items: center;
     width: 100%;
     padding-left: 0.5rem;
@@ -69,24 +77,29 @@ header .logo{
 header .logo span{
     color: var(--red);
 }
+
 .Home .Home-items .head span:hover,
 header .logo:hover{
     letter-spacing: 0.2rem;
     transition: 0.3s;
 }
-header .side-items{
+
+header .navbar{
     display: flex;
     margin-right: 7rem;
     padding-top: 0.5rem;
 }
-header .side-items .side{
+header .navbar a{
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
     padding-left: 2rem;
 }
 
-
+header .navbar .active,
+header .navbar a :hover{
+    color: #FF0000;
+}
 
 
 
@@ -368,11 +381,12 @@ header .side-items .side{
     height: 2rem;
     margin: 0 1rem;
 }
+
+
 .honors .platform .leetcode .btnss:hover{
     color: white;
     border-color: white;
 }
-
 
 
 
