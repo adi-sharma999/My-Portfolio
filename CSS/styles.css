@@ -334,7 +334,7 @@ header .navbar a :hover{
 }
 .honors .platform{
     display: flex;
-    margin: 5rem 7rem;
+    margin: 4rem 7rem;
 }
 .honors .platform .leetcode{
     display: flex;
