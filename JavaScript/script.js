@@ -1,8 +1,11 @@
-var loader = document.getElementById("preloader");
-window.addEventListener("load",function(){
-    loader.style.display = "none";
-})
 
+function loader(){
+    document.querySelector('.preloader').classList.add('fade-out');
+}
+function fadeOut(){
+    setInterval(loader,2000);
+}
+window.onload = fadeOut;
 
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .navbar a');
