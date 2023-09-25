@@ -1,4 +1,3 @@
-
 function loader(){
     document.querySelector('.preloader').classList.add('fade-out');
 }
