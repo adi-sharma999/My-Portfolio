@@ -17,6 +17,8 @@ span:hover{
 }
 body{
     background-color: var(--black);
+    height: 100%;
+    width: 100%;
 }
 
 .preloader{
@@ -33,8 +35,8 @@ body{
 
 .vl{
     border-left: 1px solid var(--red);
-    margin: auto 0rem auto 5rem;
-    height: 100px;
+    margin: auto 2.5rem auto 2.5rem;
+    height: 75px;
 }
 
 .v{
@@ -45,9 +47,13 @@ body{
     height: 250px;
 }
 
+.ruler{
+    width: 100%;
+}
+
 hr{
     width: 5%;
-    margin: 0rem auto 2.75rem auto;
+    margin: 5rem auto;
     border-top: 1rem dotted var(--light-color);
     border-bottom: none;
     border-right: none;
@@ -158,11 +164,11 @@ header .navbar a :hover{
     height: 100%;
 }
 .hes{
-    position: relative;
-    top: 2.75rem;
     color: white;
     font-weight: lighter;
     font-size: 2.5rem;
+    margin: auto;
+    margin-bottom: 0rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -174,7 +180,6 @@ header .navbar a :hover{
     flex-wrap: wrap;
     gap: 5%;
     height: 100%;
-    
 }
 .certificate .certi-slider .wrapper .slide .pic{
     flex:1 1 21rem;
@@ -221,8 +226,7 @@ header .navbar a :hover{
     width: 100%;
 }
 .project .pro{
-    height: 100%;
-    margin: 5rem 7rem 5rem 7rem;
+    margin: 6rem 7rem 5rem 7rem;
 }
 .project .pict{
     display: flex;
@@ -240,7 +244,7 @@ header .navbar a :hover{
 .project .pro .content p{
     color: var(--light-color);
     font-size: 2rem;
-    margin: 5rem -7rem 5rem 5rem;
+    margin: auto;
     font-weight: lighter;
     justify-content: center;
     align-items: center;
@@ -251,19 +255,21 @@ header .navbar a :hover{
     gap: 0rem;
     margin: 5rem 0rem 5rem 5rem;
 }
-.project .pro .content .btn{
+.project .pro .boo{
+    text-align: end;
+}
+.boo .btn{
     cursor: pointer;
-    height: 3rem;
-    width: 20rem;
-    margin-top: 12rem;
+    height: 2.5rem;
+    width: 8rem;
     font-size: 1rem;
-    margin-right: 2.5rem;
     border-radius: 3rem;
     color: var(--red);
     border-color: var(--red);
     background-color: var(--black);
+    text-align: center;
 }
-.project .pro .content button:hover{
+.project .pro button:hover{
     color: white;
     border-color: white;
 }
@@ -271,7 +277,7 @@ header .navbar a :hover{
 .project .pro .content h1{
     color: white;
     font-size: 2.5rem;
-    margin: auto;
+    margin: auto auto 0 auto;
     margin-left: 2.5rem;
     font-weight: bold;
     text-align: right;
@@ -328,10 +334,12 @@ header .navbar a :hover{
 .honors{
     width: 100%;
 }
+
 .honors .platform{
     display: flex;
-    margin: 4rem 7rem;
+    margin: 0rem 7rem;
 }
+
 .honors .platform .leetcode{
     display: flex;
 }
@@ -351,6 +359,7 @@ header .navbar a :hover{
 }
 
 .honors .platform .leetcode .disc .hacker{
+
     margin: 7rem 2rem;
 }
 
@@ -374,6 +383,7 @@ header .navbar a :hover{
     justify-content: center;
     align-items: center;
 }
+
 .honors .platform .leetcode .btnss{
     cursor: pointer;
     color: var(--red);
@@ -387,7 +397,6 @@ header .navbar a :hover{
     margin: 0 1rem;
 }
 
-
 .honors .platform .leetcode .btnss:hover{
     color: white;
     border-color: white;
@@ -396,12 +405,14 @@ header .navbar a :hover{
 .footer{
     width: 100%;
 }
+
 .footer .footer-items {
     margin-top: 6rem;
     justify-content: center;
     text-align: center;
     align-items: center;
 }
+
 .footer a{
     color: white;
     text-decoration: none;
@@ -422,9 +433,1268 @@ header .navbar a :hover{
     color: white;
     margin-top: 6rem;
     margin-bottom: .5rem;
+    padding-bottom: 0.75rem;
     font-size: 1rem;
     font-weight: lighter;
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 1600px){
+    .honors .platform .leetcode .photo {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1200px){
+
+
+
+    hr{
+        width: 5%;
+        margin: 5rem auto;
+        border-top: 1rem dotted var(--light-color);
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+    }
+    
+    
+    
+    
+    
+    header{
+        background-color: var(--black);
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        z-index: 99;
+        align-items: center;
+        width: 100%;
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+    }
+    header .logo{
+        font-size: 1.5rem;
+        color: white;
+        margin-left: 7rem;
+        text-decoration: none;
+        padding-top: 0.5rem;
+    }
+    header .logo span{
+        color: var(--red);
+    }
+    
+    .Home .Home-items .head span:hover,
+    header .logo:hover{
+        letter-spacing: 0.2rem;
+        transition: 0.3s;
+    }
+    
+    header .navbar{
+        display: flex;
+        margin-right: 7rem;
+        padding-top: 0.5rem;
+    }
+    header .navbar a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        padding-left: 2rem;
+    }
+    
+    header .navbar .active,
+    header .navbar a :hover{
+        color: #FF0000;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .Home{
+        padding-top: 0.75rem;
+    }
+    .Home .Home-items{
+        padding-top: 12%;
+        display: flex;
+        margin: 0 10rem;
+        padding-bottom:12rem;
+        padding-left: 5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .Home .Home-items .head{
+        margin-left: 5rem;
+        margin-right: 4rem;
+    }
+    
+    
+    .Home .Home-items .head h1{
+        color: white;
+        font-size: 4.5rem;
+        font-weight: bold;
+        padding-bottom: .7rem;
+    }
+    .Home .Home-items .head h3{
+        color: gray;
+        font-size: 2.5rem;
+        font-weight: lighter;
+    }
+    .Home .Home-items .head span{
+        color: var(--red);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .certificate{
+        width: 100%;
+        height: 100%;
+    }
+    .hes{
+        color: white;
+        font-weight: lighter;
+        font-size: 2.5rem;
+        margin: auto;
+        margin-bottom: 0rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .certificate .certi-slider .wrapper .slide{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5%;
+        height: 100%;
+    }
+    .certificate .certi-slider .wrapper .slide .pic{
+        flex:1 1 21rem;
+        margin-left: 21%;
+    }
+    .certificate .certi-slider .wrapper .slide .pic img{
+        width: 100%;
+        border-radius: .5rem;
+    }
+    .certificate .certi-slider .wrapper .slide .content{
+        align-items: center;
+        flex: 1 1 2rem;
+        margin-right: 21%;
+    }
+    .certificate .certi-slider .wrapper .slide .content h1{
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        padding-bottom: .7rem;
+    }
+    
+    .certificate .certi-slider .wrapper .slide .content h3{
+        color:gray;
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+    
+    .swiper-button-next{
+        color: var(--red);
+        padding-right: 7.5rem;
+    }
+    .swiper-button-prev{
+        color: var(--red);
+        padding-left: 7.5rem;
+    }
+    .cisco{
+        display: flex;
+        margin-left: 25%;
+    }
+    
+    
+    
+    .project{
+        width: 100%;
+    }
+    .project .pro{
+        margin: 6rem 7rem 5rem 7rem;
+    }
+    .project .pict{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project .pict img{
+        width: 65%;
+    }
+    
+    .project .pro .content{
+        display: flex;
+    }
+    
+    .project .pro .content p{
+        color: var(--light-color);
+        font-size: 2rem;
+        margin: auto;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project .pro .content .cont{
+        display: flex;
+        gap: 0rem;
+        margin: 5rem 0rem 5rem 5rem;
+    }
+    .project .pro .boo{
+        text-align: end;
+    }
+    .boo .btn{
+        cursor: pointer;
+        height: 2.5rem;
+        width: 8rem;
+        font-size: 1rem;
+        border-radius: 3rem;
+        color: var(--red);
+        border-color: var(--red);
+        background-color: var(--black);
+        text-align: center;
+    }
+    .project .pro button:hover{
+        color: white;
+        border-color: white;
+    }
+    
+    .project .pro .content h1{
+        color: white;
+        font-size: 2.5rem;
+        margin: auto auto 0 auto;
+        margin-left: 2.5rem;
+        font-weight: bold;
+        text-align: right;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    
+    
+    .About{
+        width: 100%;
+        height: 100%;
+    }
+    .About .data{
+        margin: 10rem 10rem 5rem 10rem;
+    }
+    .About .skills{
+        display: flex;
+    }
+    
+    .About .skills .skill-items .java{
+        display: flex;
+    }
+    
+    .About .skills .fas{
+        color: var(--red);
+        font-size: 1.25rem;
+        margin: auto .5rem;
+        height: 100%;
+    }
+    
+    .About .skills .imgg{
+        display: flex;
+        align-items: center;
+    }
+    
+    .About .skills .imgg img{
+        width: 75%;
+    }
+    
+    .About .data h3{
+        font-weight: lighter;
+        font-size: 2rem;
+        color: white;
+        margin: 1rem 2.5rem;
+    }
+    
+    
+    
+    
+    
+    .honors{
+        width: 100%;
+    }
+    
+    .honors .platform{
+        display: flex;
+        margin: 0rem 7rem;
+    }
+    
+    .honors .platform .leetcode{
+        display: flex;
+    }
+    
+    .honors .platform .leetcode .photo{
+        margin: auto;
+        width: 50%;
+    }
+    
+    .honors .platform .leetcode .photo img{
+        width: 100%;
+        margin: 2.25rem auto;
+    }
+    
+    .honors .platform .leetcode .disc .leet{
+        margin: 7rem 2rem;
+    }
+    
+    .honors .platform .leetcode .disc .hacker{
+    
+        margin: 7rem 2rem;
+    }
+    
+    .honors .platform .leetcode .disc .code{
+        margin: 7rem 2rem;
+    }
+    .honors .platform .leetcode .disc h3{
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .honors .platform .leetcode .disc p{
+        color: var(--light-color);
+        font-size: 1.5rem;
+        font-weight: lighter;
+        margin: 1.5rem auto 1.5rem auto;
+    }
+    
+    .honors .platform .leetcode{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .honors .platform .leetcode .btnss{
+        cursor: pointer;
+        color: var(--red);
+        border-radius: 2.5rem;
+        border-color: var(--red);
+        background-color: var(--black);
+        margin: auto;
+        font-size: 1rem;
+        width: 6rem;
+        height: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .honors .platform .leetcode .btnss:hover{
+        color: white;
+        border-color: white;
+    }
+    
+    .footer{
+        width: 100%;
+    }
+    
+    .footer .footer-items {
+        margin-top: 6rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.25rem;
+        margin: 0 1rem;
+        font-weight: lighter;
+    }
+    
+    .footer a:hover{
+        color: var(--red);
+    }
+    
+    .footer .footer-items .item1, .item2{
+        margin: 2.75rem;
+    }
+    
+    .credit{
+        color: white;
+        margin-top: 6rem;
+        margin-bottom: .5rem;
+        padding-bottom: 0.75rem;
+        font-size: 1rem;
+        font-weight: lighter;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+
+        
+    hr{
+        width: 7%;
+        margin: 2rem auto;
+        border-top: 0.75rem dotted var(--light-color);
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+    }
+
+        
+    header{
+        background-color: var(--black);
+        position: fixed;
+        justify-content: space-between;
+        z-index: 99;
+        align-items: center;
+        width: 100%;
+        margin-top: 0rem;
+        padding-left: 0rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    header .logo{
+        font-size: 1.75rem;
+        color: white;
+        margin-left: 1rem;
+        padding-top: 0rem;
+    }
+        
+    .Home .Home-items .head span:hover,
+    header .logo:hover{
+        letter-spacing: 0rem;
+        transition: 0s;
+    }
+        
+    header .navbar{
+        margin-top: 0rem;
+        margin-right: 1rem;
+        padding-top: 0rem;
+    }
+    header .navbar a{
+        color: white;
+        font-size: 1.25rem;
+        padding-left: 1.5rem;
+    }
+
+
+
+
+   
+    .Home{
+        width: 100%;
+        padding-top: 1rem;
+        height: 100%;
+        background: rgba(0, 0, 0,0.8) url(/img/giphy.gif);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    .Home .Home-items{
+        padding-top: 0%;
+        display: flex;
+        margin: 33% 3rem;
+        gap: 0rem;
+        padding-bottom:0rem;
+        padding-left: 0rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .Home .Home-items .head{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    .Home .image{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Home .image img{
+        display: none;
+    }
+    .Home .Home-items .head h1{
+        color: white;
+        font-size: 4rem;
+        font-weight: bold;
+        padding-bottom: 0%;
+        text-align: center;
+    }
+    .Home .Home-items .head h3{
+        color: gray;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .Home .Home-items .head span{
+        color: var(--red);
+    }
+
+
+
+
+
+
+        
+    .certificate{
+        width: 100%;
+        height: 100%;
+    }
+    .hes{
+        color: white;
+        font-weight: lighter;
+        font-size: 2rem;
+        margin: auto;
+        margin-bottom: 5rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .certificate .certi-slider .wrapper .slide{
+        display: block;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        gap: 10%;
+        height: 100%;
+    }
+    .certificate .certi-slider .wrapper .slide .pic{
+        margin-left: 0%;
+        margin: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .certificate .certi-slider .wrapper .slide .pic img{
+        width: 60%;
+        border-radius: .5rem;
+    }
+    .certificate .certi-slider .wrapper .slide .content{
+        align-items: center;
+        flex: 1 1 1rem;
+        margin-right: 0%;
+        margin: 2.5rem 5rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .certificate .certi-slider .wrapper .slide .content h1{
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+    
+    .certificate .certi-slider .wrapper .slide .content h3{
+        color:gray;
+        font-size: 1.75rem;
+        font-weight: lighter;
+    }
+
+    
+    .swiper-button-next{
+        color: var(--red);
+        top: 12.5rem;
+        padding-right: 1rem;
+    }
+    .swiper-button-next:after{
+        color: var(--red);
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .swiper-button-prev:after{
+        color: var(--red);
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .swiper-button-prev{
+        color: var(--red);
+        top: 12.5rem;
+        padding-left: 1rem;
+    }
+
+    .cisco{
+        margin: 1.25rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .cisco img{
+        width: 80%;
+    }
+    
+
+
+
+
+
+        
+    .vl{
+        border-left: 1px solid var(--red);
+        margin: auto 1.5rem auto 1.5rem;
+        height:70px;
+    }
+    .project{
+        width: 100%;
+    }
+    .project .pro{
+        margin: 3.25rem 3rem;
+    }
+    .project .pict{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project .pict img{
+        width: 100%;
+        margin-top: .75rem;
+    }
+
+    .project .pro .content{
+        display: flex;
+    }
+
+    .project .pro .content p{
+        color: var(--light-color);
+        font-size: 1.75rem;
+        margin: auto;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .project .pro .content .cont{
+        display: flex;
+        gap: 0rem;
+        margin: auto;
+    }
+    .project .pro .boo{
+        text-align: end;
+        margin-top: 1rem;
+    }
+    .boo .btn{
+        cursor: pointer;
+        height: 2rem;
+        width: 6rem;
+        font-size: .75rem;
+        border-radius: 3rem;
+        color: var(--red);
+        border-color: var(--red);
+        background-color: var(--black);
+        text-align: center;
+    }
+    .project .pro button:hover{
+        color: white;
+        border-color: white;
+    }
+
+    .project .pro .content h1{
+        color: white;
+        font-size: 2rem;
+        margin: auto;
+        margin-left: 0rem;
+        font-weight: bold;
+        text-align: right;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+        
+    .honors{
+        width: 100%;
+    }
+
+    .honors .platform{
+        display: flex;
+        margin: 3.25rem 3rem;
+    }
+
+    .honors .platform .leetcode{
+        display: flex;
+    }
+
+    .honors .platform .leetcode .photo{
+        display: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .honors .platform .leetcode .photo img{
+        display: none;
+        width: 100%;
+        margin: 0;
+    }
+    .honors .platform .leetcode .disc .leet{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .honors .platform .leetcode .disc .hacker{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .honors .platform .leetcode .disc .code{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .honors .platform .leetcode .disc h3{
+        color: white;
+        font-size: 1.75rem;
+        margin-bottom: .5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .honors .platform .leetcode .disc p{
+        color: var(--light-color);
+        font-size: 1.5rem;
+        font-weight: lighter;
+        margin: auto;
+        text-align: center;
+    }
+
+    .honors .platform .leetcode{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .honors .platform .leetcode .btnss{
+        display: none;
+    }
+
+    .honors .platform .leetcode .btnss:hover{
+        color: white;
+        border-color: white;
+    }
+
+
+
+    
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer .footer-items {
+        margin-top: 0rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        margin: 0 0.5rem;
+        font-weight: lighter;
+    }
+
+    .footer a:hover{
+        color: var(--red);
+    }
+
+    .footer .footer-items .item1, .item2{
+        margin: 0rem 2rem;
+        line-height: 2.25rem;
+    }
+
+    .credit{
+        color: white;
+        margin-top: 3.25rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        font-size: 1rem;
+        font-weight: lighter;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 525px){
+    
+
+        
+    hr{
+        width: 7%;
+        margin: 2rem auto;
+        border-top: 0.4rem dotted var(--light-color);
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+    }
+
+        
+    header{
+        background-color: var(--black);
+        position: fixed;
+        justify-content: space-between;
+        z-index: 99;
+        align-items: center;
+        width: 100%;
+        margin-top: 0rem;
+        padding-left: 0rem;
+        padding-bottom: .75rem;
+        padding-top: .75rem;
+    }
+    header .logo{
+        font-size: 1rem;
+        color: white;
+        margin-left: 1rem;
+        padding-top: 0rem;
+    }
+        
+    .Home .Home-items .head span:hover,
+    header .logo:hover{
+        letter-spacing: 0rem;
+        transition: 0s;
+    }
+        
+    header .navbar{
+        margin-top: 0rem;
+        margin-right: 1rem;
+        padding-top: 0rem;
+    }
+    header .navbar a{
+        color: white;
+        font-size: .8rem;
+        padding-left: 1.25rem;
+    }
+
+
+
+
+   
+    .Home{
+        width: 100%;
+        padding-top: 1rem;
+        height: 70%;
+        background: rgba(0, 0, 0,0.8) url(/img/giphy.gif);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    .Home .Home-items{
+        padding-top: 0%;
+        display: flex;
+        margin: 50% 2rem;
+        gap: 0rem;
+        padding-bottom:0rem;
+        padding-left: 0rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .Home .Home-items .head{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    .Home .image{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Home .image img{
+        display: none;
+    }
+    .Home .Home-items .head h1{
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding-bottom: 0%;
+        text-align: center;
+    }
+    .Home .Home-items .head h3{
+        color: gray;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .Home .Home-items .head span{
+        color: var(--red);
+    }
+
+
+
+
+
+
+        
+    .certificate{
+        width: 100%;
+        height: 55%;
+    }
+    .hes{
+        color: white;
+        font-weight: lighter;
+        font-size: 1.25rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .certificate .certi-slider .wrapper .slide{
+        display: block;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        gap: 10%;
+        height: 100%;
+    }
+    .certificate .certi-slider .wrapper .slide .pic{
+        margin-left: 0%;
+        margin: 1.25rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .certificate .certi-slider .wrapper .slide .pic img{
+        width: 70%;
+        border-radius: .5rem;
+    }
+    .certificate .certi-slider .wrapper .slide .content{
+        align-items: center;
+        flex: 1 1 1rem;
+        margin-right: 0%;
+        margin: 1.5rem 5rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .certificate .certi-slider .wrapper .slide .content h1{
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-bottom: 0rem;
+    }
+    
+    .certificate .certi-slider .wrapper .slide .content h3{
+        color:gray;
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
+
+    
+    .swiper-button-next{
+        color: var(--red);
+        top: 7.5rem;
+        padding-right: .5rem;
+    }
+    .swiper-button-next:after{
+        color: var(--red);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .swiper-button-prev:after{
+        color: var(--red);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .swiper-button-prev{
+        color: var(--red);
+        top: 7.5rem;
+        padding-left: .5rem;
+    }
+
+    .cisco{
+        margin: 1.25rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .cisco img{
+        width: 50%;
+    }
+    
+
+
+
+
+
+        
+    .vl{
+        border-left: 1px solid var(--red);
+        margin: auto 1rem auto 1rem;
+        height:50px;
+    }
+    .project{
+        width: 100%;
+    }
+    .project .pro{
+        margin: 3.25rem 2rem;
+    }
+    .project .pict{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project .pict img{
+        width: 100%;
+        margin-top: .75rem;
+    }
+
+    .project .pro .content{
+        display: flex;
+    }
+
+    .project .pro .content p{
+        color: var(--light-color);
+        font-size: 0.9rem;
+        margin: auto;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .project .pro .content .cont{
+        display: flex;
+        gap: 0rem;
+        margin: auto;
+    }
+    .project .pro .boo{
+        text-align: end;
+        margin-top: .5rem;
+    }
+    .boo .btn{
+        cursor: pointer;
+        height: 1rem;
+        width: 3.5rem;
+        font-size: 0.4rem;
+        border-radius: 3rem;
+        color: var(--red);
+        border-color: var(--red);
+        background-color: var(--black);
+        text-align: center;
+    }
+    .project .pro button:hover{
+        color: white;
+        border-color: white;
+    }
+
+    .project .pro .content h1{
+        color: white;
+        font-size: 1.2rem;
+        margin: auto;
+        margin-left: 0rem;
+        font-weight: bold;
+        text-align: right;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+        
+    .honors{
+        width: 100%;
+    }
+
+    .honors .platform{
+        display: flex;
+        margin: 3.25rem 2rem;
+    }
+
+    .honors .platform .leetcode{
+        display: flex;
+    }
+
+    .honors .platform .leetcode .photo{
+        display: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .honors .platform .leetcode .photo img{
+        display: none;
+        width: 100%;
+        margin: 0;
+    }
+    .honors .platform .leetcode .disc .leet{
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .honors .platform .leetcode .disc .hacker{
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .honors .platform .leetcode .disc .code{
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+    .honors .platform .leetcode .disc h3{
+        color: white;
+        font-size: 1rem;
+        margin-bottom: .2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .honors .platform .leetcode .disc p{
+        color: var(--light-color);
+        font-size: 0.75rem;
+        font-weight: lighter;
+        margin: auto;
+        text-align: center;
+    }
+
+    .honors .platform .leetcode{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .honors .platform .leetcode .btnss{
+        display: none;
+    }
+
+    .honors .platform .leetcode .btnss:hover{
+        color: white;
+        border-color: white;
+    }
+
+
+
+    
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer .footer-items {
+        margin-top: 0rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer a{
+        color: white;
+        text-decoration: none;
+        font-size: 0.75rem;
+        margin: 0 0.25rem;
+        font-weight: lighter;
+    }
+
+    .footer a:hover{
+        color: var(--red);
+    }
+
+    .footer .footer-items .item1, .item2{
+        margin: 0rem 2rem;
+        line-height: 1.75rem;
+    }
+
+    .credit{
+        color: white;
+        margin-top: 3.25rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        font-size: 0.7rem;
+        font-weight: lighter;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+@media (max-width: 336px){
+    
+    header .logo{
+        font-size: 0.9rem;
+        color: white;
+        margin-left: 1rem;
+        padding-top: 0rem;
+    }
+        
+    header .navbar a{
+        color: white;
+        font-size: .7rem;
+        padding-left: 1.25rem;
+    }
+    
+    .project .pro .content p{
+        color: var(--light-color);
+        font-size: 0.7rem;
+        margin: auto;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
 }
