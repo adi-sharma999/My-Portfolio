@@ -850,19 +850,6 @@ header .navbar a :hover{
         text-align: center;
         align-items: center;
     }
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -936,7 +923,7 @@ header .navbar a :hover{
 
 
    
-    .Home{
+    .Home
         width: 100%;
         padding-top: 1rem;
         height: 100%;
