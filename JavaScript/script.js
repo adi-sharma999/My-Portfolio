@@ -1,10 +1,17 @@
-function loader(){
-    document.querySelector('.preloader').classList.add('fade-out');
+var x = document.querySelector('.preloader');
+function fadeOut(el){
+  var opacity = 6;
+  var interval = setInterval(function(){
+    if(opacity>0){
+      opacity -= .1;
+      el.style.opacity = opacity;
+    }else{
+      clearInterval(interval);
+      el.style.display = 'none';
+    }
+  },20);
 }
-function fadeOut(){
-    setInterval(loader,2000);
-}
-window.onload = fadeOut;
+fadeOut(x);
 
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .navbar a');
