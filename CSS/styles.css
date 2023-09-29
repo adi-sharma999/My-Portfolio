@@ -850,6 +850,19 @@ header .navbar a :hover{
         text-align: center;
         align-items: center;
     }
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -923,7 +936,7 @@ header .navbar a :hover{
 
 
    
-    .Home
+    .Home{
         width: 100%;
         padding-top: 1rem;
         height: 100%;
@@ -1421,7 +1434,7 @@ header .navbar a :hover{
         color: white;
         font-size: 1.2rem;
         font-weight: bold;
-        padding-bottom: 0rem;
+        padding-bottom: 0.5rem;
     }
     
     .certificate .certi-slider .wrapper .slide .content h3{
@@ -1469,6 +1482,7 @@ header .navbar a :hover{
 
         
     .vl{
+        display: none;
         border-left: 1px solid var(--red);
         margin: auto 1rem auto 1rem;
         height:50px;
@@ -1490,13 +1504,14 @@ header .navbar a :hover{
     }
 
     .project .pro .content{
-        display: flex;
+        display: block;
     }
 
     .project .pro .content p{
         color: var(--light-color);
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin: auto;
+        line-height: 1.2rem;
         font-weight: lighter;
         justify-content: center;
         align-items: center;
@@ -1514,9 +1529,9 @@ header .navbar a :hover{
     }
     .boo .btn{
         cursor: pointer;
-        height: 1rem;
-        width: 3.5rem;
-        font-size: 0.4rem;
+        height: 1.5rem;
+        width: 4rem;
+        font-size: 0.5rem;
         border-radius: 3rem;
         color: var(--red);
         border-color: var(--red);
@@ -1530,11 +1545,12 @@ header .navbar a :hover{
 
     .project .pro .content h1{
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         margin: auto;
         margin-left: 0rem;
         font-weight: bold;
-        text-align: right;
+        margin-bottom: 0.7rem;
+        text-align: center;
         justify-content: center;
         align-items: center;
     }
@@ -1583,7 +1599,7 @@ header .navbar a :hover{
     }
     .honors .platform .leetcode .disc h3{
         color: white;
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: .2rem;
         font-weight: bold;
         text-align: center;
