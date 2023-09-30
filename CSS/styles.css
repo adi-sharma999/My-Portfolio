@@ -940,7 +940,7 @@ header .navbar a :hover{
         width: 100%;
         padding-top: 1rem;
         height: 100%;
-        background: rgba(0, 0, 0,0.8) url(/img/giphy.gif);
+        background: rgba(0, 0, 0,0.8) url(../img/giphy.gif);
         background-size: cover;
         background-blend-mode: darken;
     }
@@ -1338,7 +1338,7 @@ header .navbar a :hover{
         width: 100%;
         padding-top: 1rem;
         height: 70%;
-        background: rgba(0, 0, 0,0.8) url(/img/giphy.gif);
+        background: rgba(0, 0, 0,0.8) url(../img/giphy.gif);
         background-size: cover;
         background-blend-mode: darken;
     }
@@ -1390,7 +1390,7 @@ header .navbar a :hover{
         
     .certificate{
         width: 100%;
-        height: 55%;
+        height: 50%;
     }
     .hes{
         color: white;
